@@ -41,7 +41,17 @@ const alunosDaTurmaB = [
     }
 ]
 function calculaMedia (alunos) {
-    return (alunos[0].nota + alunos[1].nota + alunos[2].nota)/3
+    for (let i = 0; i < alunos.length; i++) {
+        console.log(i);
+    }
+}
+if (alunos < 5) {
+    console.log(`parabens alunos a media foi de ${media}`)
+} else {
+    console.log ( 'a media foi menor que 5')
 }
 const media1 = calculaMedia (alunosDaTurmaA)
-console.log (media1)
+const media2 = calculaMedia (alunosDaTurmaB)
+function enviaMensagem (media) {
+    console.log (media1 + media2)
+}
