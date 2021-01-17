@@ -2,18 +2,18 @@ const alunosDaTurmaA = [
     {
         nome: 'jhosep',
         idade: 20,
-        nota: 10.0
+        nota: 4.0
     },
     {
         nome: 'karool',
         idade: 16,
-        nota: 10.0
+        nota: 6.0
 
     },
     {
         nome: 'gaby',
         idade: 40,
-        nota: 10.0
+        nota: 5.0
     }
 ]
 
@@ -41,17 +41,19 @@ const alunosDaTurmaB = [
     }
 ]
 function calculaMedia (alunos) {
-    for (let i = 0; i < alunos.length; i++) {
-        console.log(i);
-    }
-}
-if (alunos < 5) {
-    console.log(`parabens alunos a media foi de ${media}`)
-} else {
-    console.log ( 'a media foi menor que 5')
+    for (let i = 0; i < alunos.)
 }
 const media1 = calculaMedia (alunosDaTurmaA)
 const media2 = calculaMedia (alunosDaTurmaB)
-function enviaMensagem (media) {
-    console.log (media1 + media2)
+
+function enviameng (media,turma){
+    if (media > 5) {
+        console.log (`a media final da ${turma} foi ${media}, parabens`)
+    
+    } else {
+        console.log (`media da ${turma} foi menor que 5!`)
+    }
 }
+
+enviameng (media1,'TurmaA')
+enviameng (media2,'TurmaB')
