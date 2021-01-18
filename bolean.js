@@ -7,7 +7,7 @@ const alunosDaTurmaA = [
     {
         nome: 'karool',
         idade: 16,
-        nota: 6.0
+        nota: 4.0
 
     },
     {
@@ -27,7 +27,7 @@ const alunosDaTurmaB = [
     {
         nome: 'gabriel',
         idade: 20,
-        nota: 5.0
+        nota: 2.0
     },
     {
         nome: 'giovanna',
@@ -42,7 +42,8 @@ const alunosDaTurmaB = [
     },
     {
         nome: 'novo Aluno',
-        nota: 5
+        idade: 15,
+        nota: 2
     }
 ]
 function calculaMedia (alunos) {
@@ -90,7 +91,7 @@ function enviarMensagemReprov (aluno) {
 
     function alunoReprovado (alunos){
         for (let aluno of alunos) {
-            marcarReporv (alunosDaTurmaA);
+            marcarReporv (alunos);
             enviarMensagemReprov (aluno)
         }
     }
