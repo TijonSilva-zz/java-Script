@@ -27,22 +27,22 @@ const alunosDaTurmaB = [
     {
         nome: 'gabriel',
         idade: 20,
-        nota: 5.0
+        nota: 03
     },
     {
         nome: 'giovanna',
         idade: 16,
-        nota: 8.0
+        nota: 03
 
     },
     {
         nome: 'antonio',
         idade: 40,
-        nota: 10.0
+        nota: 03
     },
     {
         nome: 'novo Aluno',
-        nota: 5
+        nota: 03
     }
 ]
 function calculaMedia (alunos) {
@@ -75,14 +75,18 @@ function marcarReporv (alunos) {
             aluno.Reprov = true;
         } 
     }
-
+}
+    function enviarMensagemReprov (aluno) {
+        if (aluno.Reprov) {
+            console.log ( `o aluno ${aluno.nome} esta reprovado!`)
+        }
     }
     enviarMensagemReprov (alunosDaTurmaA)
     enviarMensagemReprov (alunosDaTurmaB)
 
     function alunoReprovado (alunos){
         for (let aluno of alunos) {
-            marcarReporv (aluno);
+            marcarReporv (alunos);
             enviarMensagemReprov (aluno)
         }
     }

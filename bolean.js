@@ -47,11 +47,13 @@ const alunosDaTurmaB = [
     }
 ]
 function calculaMedia (alunos) {
+    
     let soma = 0;
     for (let i = 0; i < alunos.length; i++){
         soma = soma + alunos[i].nota
     }
     const media = soma / alunos.length
+    
     return media
 }
 const media1 = calculaMedia (alunosDaTurmaA)
@@ -70,6 +72,7 @@ enviameng (media1,'TurmaA')
 enviameng (media2,'TurmaB')
 
 function marcarReporv (alunos) { 
+    
     for (let aluno of alunos) {
         aluno.Reprov= false;
         if (aluno.nota < 5) {
@@ -81,6 +84,7 @@ function marcarReporv (alunos) {
 }
 
 function enviarMensagemReprov (aluno) {
+   
     if (aluno.Reprov) {
         console.log ( `o aluno ${aluno.nome} esta reprovado!`)
     }
@@ -89,12 +93,12 @@ function enviarMensagemReprov (aluno) {
     enviarMensagemReprov (alunosDaTurmaA)
     enviarMensagemReprov (alunosDaTurmaB)
 
-    function alunoReprovado (alunos){
+    function alunoReprovados (alunos){
         for (let aluno of alunos) {
             marcarReporv (alunos);
             enviarMensagemReprov (aluno)
         }
     }
 
-    alunoReprovado (alunosDaTurmaA);
-    alunoReprovado (alunosDaTurmaB);
+    alunoReprovados (alunosDaTurmaA);
+    alunoReprovados (alunosDaTurmaB);
