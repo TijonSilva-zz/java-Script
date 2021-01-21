@@ -12,13 +12,20 @@ const usuarios = [
         tecno: ['HTML', 'Node.js']
     }
 ]
+//function checausuario (usuarios) {
+   // if (usuarios == 'CSS' ) {
+    
+    //} else {
+ ////       console.log ('os usuarios nao usam css')
+   // }
+//}
 
-function CSS (usuarios) {
-    for (let i = 0; i<usuarios.length; i++) {
-        const usercss = checaSeUsuarioUsaCSS(usuario[i]) 
-    }
-}
-console.log (i)
+//function CSS (usuarios) {
+//    for (let i = 0; i<usuarios.length; i++) {
+ //       const usercss = checausuario (usuarios[i])
+//    }
+//}
+console.log (usuarios[0])
 
 
 
