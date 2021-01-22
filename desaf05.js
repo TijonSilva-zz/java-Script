@@ -1,4 +1,4 @@
-const usuarios = [
+const users = [
     {
         nome: 'Carlos',
         tecno: ['HTML', 'CSS']
@@ -12,14 +12,6 @@ const usuarios = [
         tecno: ['HTML', 'Node.js']
     }
 ]
-function usercss (usuarios) {
-    if (usuarios.length == 'CSS') true; {
-        console.log ('os usuarios que tem.')
-    } else {
-        console.log('ninguem trabalha com css')
-    } 
-}
-//console.log (`${usuarios[0].nome} trabalha com ${usuarios[0].tecno}.`)
-//console.log (`${usuarios[1].nome} trabalha com ${usuarios[1].tecno}.`)
-//console.log (`${usuarios[2].nome} trabalha com ${usuarios[2].tecno}.`)
-
+console.log (`${users[0].nome} trabalha com ${users[0].tecno}.`)
+console.log (`${users[1].nome} trabalha com ${users[1].tecno}.`)
+console.log (`${users[2].nome} trabalha com ${users[2].tecno}.`)
