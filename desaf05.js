@@ -12,8 +12,8 @@ const users = [
         tecno: ['HTML','Node.js']
     }
 ]
-
-for (let i = 0; i < users.length;) {
+let i = 0
+for (let i = 0; i < users.length; i++) {
     console.log (`${users.nome} trabalha com ${users.tecno}`)
 }
 console.log (i)
