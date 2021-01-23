@@ -1,17 +1,22 @@
 const users = [
     {
         nome: 'Carlos',
-        tecno: ['HTML', 'CSS']
+        tecno:  'CSS'
     },
     {
         nome: 'Jasmine',
-        tecno: ['JavaScript', 'CSS']
+        tecno:  'CSS'
     },
     {
         nome: 'Tuane',
-        tecno: ['HTML', 'Node.js']
+        tecno: 'Node.js'
     }
 ]
-console.log (`${users[0].nome} trabalha com ${users[0].tecno}.`)
-console.log (`${users[1].nome} trabalha com ${users[1].tecno}.`)
-console.log (`${users[2].nome} trabalha com ${users[2].tecno}.`)
+function checausers (users) {
+    if (users.tecno === 'CSS') {
+        console.log (`os usuarios ${users} trabalha com CSS`) 
+        } else {
+            console.log ('ninguem trabalha com CSS')
+        }
+    }
+checausers (users)
