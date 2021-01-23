@@ -13,10 +13,10 @@ const users = [
     }
 ]
 function checausers (users) {
-    if (users.tecno === 'CSS') {
+    if (users == 'CSS') {
         console.log (`os usuarios ${users} trabalha com CSS`) 
         } else {
             console.log ('ninguem trabalha com CSS')
         }
     }
-checausers (users)
+checausers (users[0].tecno)
