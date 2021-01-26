@@ -12,11 +12,16 @@ const users = [
         tecno: ['HTML','Node.js']
     }
 ]
-
-for (let i = 0; i < users[i].length; i++) {
-    console.log (`${users.nome} trabalha com ${users.tecno}`)
+function mengs (users) {
+    let teste = 3;
+    for (let i = 0; i < users[i].length; i++) {
+        console.log (`${users.nome} trabalha com ${users.tecno}`)
+    }
+    return (teste)
+    
 }
-console.log (i)
+mengs (users)
+
 
 
 
