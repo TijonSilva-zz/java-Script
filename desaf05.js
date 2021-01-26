@@ -15,7 +15,7 @@ const users = [
 function mengs (users) {
     let teste = 3;
     for (let i = 0; i < users[i].length; i++) {
-        console.log (`${users.nome} trabalha com ${users.tecno}`)
+        console.log (`${users[i].nome} trabalha com ${users[i].tecno}`)
     }
     return (teste)
     
