@@ -13,16 +13,23 @@ const users = [
     }
 ]
 function mengs (users) {
-    for (let i = 0; i < users[i].length; i++) {
+    for (let i = 0; i < users.length; i++) {
         console.log (`${users[i].nome} trabalha com ${users[i].tecno}`)
     }   
 }
 mengs (users)
 
+function checausers (users) {
+    for (let i = 0; i <users.length; i++) {
+        if (users.tecno || 'CSS') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
 
-
-
-
+checausers (users)
 
 
 
