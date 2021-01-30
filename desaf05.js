@@ -21,14 +21,13 @@ mengs (users)
 
 function checausers (users) {
     for (let i = 0; i <users.length; i++) {
-        if (users.tecno || 'CSS') {
-            return true;
+        if (users[i].tecno === 'CSS') {
+            return (true)
         } else {
-            return false;
+            console.log (false)
         }
     }
 }
-
 checausers (users)
 
 
