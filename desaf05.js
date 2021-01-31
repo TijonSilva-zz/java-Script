@@ -20,17 +20,11 @@ function mengs (users) {
 mengs (users)
 
 function checausers (users) {
-    for (let i = 0; i <users.length; i++) {
-        if (users[i].tecno === 'CSS') {
-            return (true)
-        } else {
-            console.log (false)
-        }
+    for (let i = 0; i < users.length; i++) {
+        
     }
-}
+
 checausers (users)
-
-
 
 //function checausers1 (users) {
   //  if (users[0].tecno == 'HTML','CSS') {
