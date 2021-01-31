@@ -19,13 +19,6 @@ function mengs (users) {
 }
 mengs (users)
 
-function checausers (users) {
-    for (let i = 0; i < users.length; i++) {
-        
-    }
-
-checausers (users)
-
 //function checausers1 (users) {
   //  if (users[0].tecno == 'HTML','CSS') {
     //    console.log (` ${users[0].nome} trabalha com ${users[0].tecno}`) 
