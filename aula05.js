@@ -5,7 +5,9 @@ let pedidos = [
  {id: 42, nome: 'Feijão', alimento: 'Coxinha', bebida: 'Suco de Uva'},
  {id: 890, nome: 'Gabriel', alimento: 'HotDog', bebida: 'Refrigerante'}
 
-]
-pedidos.filter(pedido =>{
- return pedido.bebida == ('refrigerante')
+];
+let filter = pedidos.filter(pedido =>{
+ return pedido.bebida == ('refrigerante'
 })
+
+console.log(filter)
