@@ -6,8 +6,8 @@ let pedidos = [
  {id: 890, nome: 'Gabriel', alimento: 'HotDog', bebida: 'Refrigerante'}
 
 ];
-let filter = pedidos.filter (pedido => {
- return pedido.bebida == 'Refrigerante'
+let pedido = pedidos.some (pedido => {
+let {alimento} = pedido
+return alimento == 'Risole'
 })
-
-console.log(filter)
+console.log (pedido)

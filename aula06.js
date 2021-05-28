@@ -6,8 +6,7 @@ let pedidos = [
  {id: 890, nome: 'Gabriel', alimento: 'HotDog', bebida: 'Refrigerante'}
 
 ];
-let filter = pedidos.filter (pedido => {
- return pedido.bebida == 'Refrigerante'
+let find = pedidos.find( pedido => {
+ return pedido.id == 420
 })
-
-console.log(filter)
+console.log(find)
